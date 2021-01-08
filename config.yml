@@ -1,0 +1,16 @@
+title: my website
+description: i am making my own website and prortfolio.
+template:
+  repo: my-website-template
+  name: my-website
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
